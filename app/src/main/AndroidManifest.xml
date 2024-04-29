@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Progetto_CapolavoroMF"
         tools:targetApi="31">
         <activity
+            android:name=".Seconda_pagina"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

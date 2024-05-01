@@ -6,12 +6,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import federico.caffe.progetto_capolavoromf.databinding.ActivityMainBinding
+import federico.caffe.progetto_capolavoromf.databinding.ActivitySecondaPaginaBinding
 
 class Seconda_pagina : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySecondaPaginaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        binding = ActivitySecondaPaginaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
         enableEdgeToEdge()
-        setContentView(R.layout.activity_seconda_pagina)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -20,7 +28,7 @@ class Seconda_pagina : AppCompatActivity() {
 
         val input = intent.getStringExtra("EXTRA_MESSAGE")
 
-        val textView = findViewById<TextView>(R.id.prova_input).apply {
+        val textView = binding.textView2.apply {
             text = input
         }
     }

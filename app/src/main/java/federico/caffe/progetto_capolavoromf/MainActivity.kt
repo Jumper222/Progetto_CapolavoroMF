@@ -1,5 +1,6 @@
 package federico.caffe.progetto_capolavoromf
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +14,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import java.io.InputStreamReader
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -42,13 +46,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val DomandeDao = db.domandeDao() // 1. Ottieni un'istanza del DAO relativo al DB
-        val user = Domande(id = 1,"U Big pussy?","Yes","No","Of Course!","Yes Daddy!",1)
-        // 2. Crea un oggetto User con i dati di test
 
-        GlobalScope.launch {//il blocco è eseguito in Coroutine, in modo da non intasare il processore principale
-            DomandeDao.insertAll(user) //Inserisce la variabile user nel DB tramite il Dao
-        }
 
         enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

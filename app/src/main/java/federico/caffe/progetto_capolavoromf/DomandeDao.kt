@@ -12,8 +12,8 @@ interface DomandeDao {
     fun getAll(): List<Domande>
 
     @Insert
-    fun insertAll(vararg users: Domande)
+    suspend fun insertAll(questions: List<Domande>)
 
-    @Delete
-    fun delete(user: Domande)
+    @Query("SELECT * FROM Domande ORDER BY RANDOM() LIMIT 1")
+    fun getRandomQuestion(): Domande
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "domanda": "Qual è la capitale d'Italia?",
+    "risposta1": "Roma",
+    "risposta2": "Milano",
+    "risposta3": "Venezia",
+    "risposta4": "Torino",
+    "trueAns": 1
+  },
+  {
+    "domanda": "Chi ha dipinto la Gioconda?",
+    "risposta1": "Leonardo da Vinci",
+    "risposta2": "Michelangelo",
+    "risposta3": "Raffaello",
+    "risposta4": "Caravaggio",
+    "trueAns": 1
+  }
+]

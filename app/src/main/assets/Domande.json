@@ -46,7 +46,7 @@
     "risposta3": "Carbonio",
     "risposta4": "Elio",
     "trueAns": 2
-  }
+  },
 
   {
     "domanda": "Quale animale è noto per il suo volo migratorio lungo migliaia di chilometri?",
@@ -55,7 +55,7 @@
     "risposta3": "Farfalla Monarca",
     "risposta4": "Colibrì",
     "trueAns": 3
-  }
+  },
 
   {
     "domanda": "Chi ha scritto il libro 'Il Piccolo Principe'?",
@@ -64,7 +64,7 @@
     "risposta3": "Albert Camus",
     "risposta4": "F. Scott Fitzgerald",
     "trueAns": 1
-  }
+  },
 
   {
     "domanda": "Qual è l'organo più grande del corpo umano?",
@@ -73,7 +73,7 @@
     "risposta3": "Cervello",
     "risposta4": "Pelle",
     "trueAns": 4
-  }
+  },
 
   {
     "domanda": "Quale pianeta è conosciuto come 'la stella del mattino' o 'la stella della sera'?",
@@ -82,7 +82,7 @@
     "risposta3": "Venere",
     "risposta4": "Urano",
     "trueAns": 3
-  }
+  },
 
   {
     "domanda": "Chi è stato il primo uomo a camminare sulla Luna?",
@@ -91,7 +91,7 @@
     "risposta3": "Yuri Gagarin",
     "risposta4": "Michael Collins",
     "trueAns": 2
-  }
+  },
 
   {
     "domanda": "Quale era il nome dell'astronave che ha portato i primi uomini sulla Luna?",
@@ -100,7 +100,7 @@
     "risposta3": "Soyuz",
     "risposta4": "Vostok 1",
     "trueAns": 1
-  }
+  },
 
   {
     "domanda": "Quale pianeta è conosciuto come il 'pianeta rosso'?",
@@ -109,7 +109,7 @@
     "risposta3": "Venere",
     "risposta4": "Mercurio",
     "trueAns": 1
-  }
+  },
 
   {
     "domanda": "Chi ha scritto 'La Divina Commedia'?",
@@ -118,7 +118,7 @@
     "risposta3": "Boccaccio",
     "risposta4": "Giovanni Verga",
     "trueAns": 1
-  }
+  },
 
   {
     "domanda": "Qual è la capitale del Giappone?",
@@ -127,7 +127,7 @@
     "risposta3": "Seoul",
     "risposta4": "Osaka",
     "trueAns": 1
-  }
+  },
 
   {
     "domanda": "Qual è l'organo del corpo umano che pompa il sangue?",
@@ -136,7 +136,7 @@
     "risposta3": "Cuore",
     "risposta4": "Polmone",
     "trueAns": 3
-  }
+  },
 
   {
     "domanda": "Quale è il più grande oceano del mondo?",
@@ -145,7 +145,7 @@
     "risposta3": "Oceano Pacifico",
     "risposta4": "Oceano Artico",
     "trueAns": 3
-  }
+  },
 
   {
     "domanda": "Chi ha dipinto 'La Notte Stellata'?",
@@ -154,7 +154,7 @@
     "risposta3": "Leonardo da Vinci",
     "risposta4": "Claude Monet",
     "trueAns": 2
-  }
+  },
 
   {
     "domanda": "Quale paese ha vinto il maggior numero di Coppe del Mondo FIFA?",
@@ -163,7 +163,7 @@
     "risposta3": "Argentina",
     "risposta4": "Italia",
     "trueAns": 1
-  }
+  },
 
   {
     "domanda": "In quale paese si trova la Grande Muraglia?",

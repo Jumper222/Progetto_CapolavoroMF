@@ -1,16 +1,13 @@
 package federico.caffe.progetto_capolavoromf
 
+import android.content.Context
 import androidx.room.Database
+import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import androidx.room.RoomDatabase.Callback
-import androidx.room.Room
-import android.content.Context
-import androidx.annotation.NonNull
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import federico.caffe.progetto_capolavoromf.CaricaDBdaJson
 
 @Database(entities = [Domande::class], version = 1)
 abstract class DomandeDatabase : RoomDatabase() {
@@ -36,8 +33,6 @@ abstract class DomandeDatabase : RoomDatabase() {
     }
 
 
-
-
     private class DomandeDatabaseCallback(
         private val context: Context
     ) : Callback() {
@@ -50,12 +45,12 @@ abstract class DomandeDatabase : RoomDatabase() {
                 }
             }
         }
+
         private suspend fun populateDatabase(dao: DomandeDao, context: Context) {
             val questions = CaricaDBdaJson(context)
             dao.insertAll(questions)
         }
     }
-
 
 
 }

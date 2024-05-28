@@ -1,6 +1,5 @@
 package federico.caffe.progetto_capolavoromf
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 

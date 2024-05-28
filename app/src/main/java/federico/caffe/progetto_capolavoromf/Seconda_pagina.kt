@@ -52,27 +52,63 @@ class Seconda_pagina : AppCompatActivity() {
                         binding.risposta4.text = question.risposta4
 
                         // Imposta il listener per controllare la risposta
-                        binding.risposta1.setOnClickListener { checkAnswer(1, question.trueAns, domandeQuestionDao) }
-                        binding.risposta2.setOnClickListener { checkAnswer(2, question.trueAns, domandeQuestionDao) }
-                        binding.risposta3.setOnClickListener { checkAnswer(3, question.trueAns, domandeQuestionDao) }
-                        binding.risposta4.setOnClickListener { checkAnswer(4, question.trueAns, domandeQuestionDao) }
+                        binding.risposta1.setOnClickListener {
+                            checkAnswer(
+                                1,
+                                question.trueAns,
+                                domandeQuestionDao
+                            )
+                        }
+                        binding.risposta2.setOnClickListener {
+                            checkAnswer(
+                                2,
+                                question.trueAns,
+                                domandeQuestionDao
+                            )
+                        }
+                        binding.risposta3.setOnClickListener {
+                            checkAnswer(
+                                3,
+                                question.trueAns,
+                                domandeQuestionDao
+                            )
+                        }
+                        binding.risposta4.setOnClickListener {
+                            checkAnswer(
+                                4,
+                                question.trueAns,
+                                domandeQuestionDao
+                            )
+                        }
                         binding.indietro.setOnClickListener { exit() }
                     }
                 } else {
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(this@Seconda_pagina, "Nessuna domanda disponibile.", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@Seconda_pagina,
+                            "Nessuna domanda disponibile.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
             } catch (e: Exception) {
                 Log.e("Seconda_pagina", "Errore nel caricamento della domanda", e)
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@Seconda_pagina, "Errore nel caricamento della domanda.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@Seconda_pagina,
+                        "Errore nel caricamento della domanda.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
     }
 
-    private fun checkAnswer(rispostaSelezionata: Int, rispostaCorretta: Int, domandeQuestionDao: DomandeDao) {
+    private fun checkAnswer(
+        rispostaSelezionata: Int,
+        rispostaCorretta: Int,
+        domandeQuestionDao: DomandeDao
+    ) {
         if (rispostaSelezionata == rispostaCorretta) {
             // Risposta corretta
             Toast.makeText(this, "Risposta corretta!", Toast.LENGTH_SHORT).show()

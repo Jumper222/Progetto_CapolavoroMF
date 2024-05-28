@@ -1,6 +1,8 @@
 package federico.caffe.progetto_capolavoromf
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -9,8 +11,10 @@ import androidx.core.view.WindowInsetsCompat
 import federico.caffe.progetto_capolavoromf.databinding.ActivitySecondaPaginaBinding
 import federico.caffe.progetto_capolavoromf.DomandeDao
 import android.widget.Toast
+import kotlin.math.log
 
 class Seconda_pagina : AppCompatActivity() {
+    var punteggio = 0
 
     private lateinit var binding: ActivitySecondaPaginaBinding
 
@@ -30,13 +34,15 @@ class Seconda_pagina : AppCompatActivity() {
         val db = DomandeDatabase.getDatabase(applicationContext)
         val domandeQuestionDao = db.domandeDao()
 
+
+
         // Carica la prima domanda
         caricaNuovaDomanda(domandeQuestionDao)
     }
 
     private fun caricaNuovaDomanda(domandeQuestionDao: DomandeDao) {
         Thread {
-            val question = domandeQuestionDao.getRandomQuestion()
+            val question = domandeQuestionDao.getRandomQuestion() //da migliorare cosi da evitare domande ripetute
             runOnUiThread {
                 // Collega i dati ai bottoni e alla TextView della domanda
                 binding.domanda.text = question.domanda
@@ -50,6 +56,7 @@ class Seconda_pagina : AppCompatActivity() {
                 binding.risposta2.setOnClickListener { checkAnswer(2, question.trueAns, domandeQuestionDao) }
                 binding.risposta3.setOnClickListener { checkAnswer(3, question.trueAns, domandeQuestionDao) }
                 binding.risposta4.setOnClickListener { checkAnswer(4, question.trueAns, domandeQuestionDao) }
+                binding.indietro.setOnClickListener { exit() }
             }
         }.start()
     }
@@ -58,11 +65,26 @@ class Seconda_pagina : AppCompatActivity() {
         if (rispostaSelezionata == rispostaCorretta) {
             // Risposta corretta
             Toast.makeText(this, "Risposta corretta!", Toast.LENGTH_SHORT).show()
+            punteggio++
+            binding.Score.text = "Score: " + punteggio
+            caricaNuovaDomanda(domandeQuestionDao)
         } else {
             // Risposta sbagliata
             Toast.makeText(this, "Risposta sbagliata!", Toast.LENGTH_SHORT).show()
+            punteggio--
+            if (punteggio < 0){
+                punteggio = 0
+                binding.Score.text = "Score: " + punteggio
+            }else  binding.Score.text = "Score: " + punteggio
+
         }
-        // Carica una nuova domanda
-        caricaNuovaDomanda(domandeQuestionDao)
+
+    }
+
+    private fun exit() {
+            val intent = Intent(this,MainActivity::class.java).also {
+
+                startActivity(it)
+            }
     }
 }

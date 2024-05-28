@@ -5,43 +5,49 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/game_boy"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/ButtonPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="87dp"
+        android:layout_height="43dp"
         android:text="@string/play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.799"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.765" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="69dp"
-        android:layout_height="20dp"
-        android:text="@string/textview"
+        android:layout_width="282dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Premi il pulsante play per iniziare"
+        android:textColor="#E80C0C"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/ButtonPlay"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
+        app:layout_constraintVertical_bias="0.187" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="197dp"
-        android:layout_height="67dp"
-        app:layout_constraintBottom_toTopOf="@+id/ButtonPlay"
+    <Button
+        android:id="@+id/buttonCloseApp"
+        android:layout_width="93dp"
+        android:layout_height="46dp"
+        android:text="close"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.57" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input"
-            android:layout_width="191dp"
-            android:layout_height="wrap_content"
-            android:hint="Inserisci il tuo nome" />
-    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

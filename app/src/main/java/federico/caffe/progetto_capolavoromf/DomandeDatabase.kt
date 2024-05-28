@@ -44,6 +44,7 @@ abstract class DomandeDatabase : RoomDatabase() {
         override fun onCreate(db: SupportSQLiteDatabase) {
             super.onCreate(db)
             INSTANCE?.let { database ->
+                // server per evitare che l'app esploda
                 CoroutineScope(Dispatchers.IO).launch {
                     populateDatabase(database.domandeDao(), context)
                 }

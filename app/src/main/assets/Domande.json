@@ -14,5 +14,163 @@
     "risposta3": "Raffaello",
     "risposta4": "Caravaggio",
     "trueAns": 1
+  },
+  {
+    "domanda": "Quale scienziato ha formulato la teoria della relatività?",
+    "risposta1": "Isaac Newton",
+    "risposta2": "Albert Einstein",
+    "risposta3": "Galileo Galilei",
+    "risposta4": "Niels Bohr",
+    "trueAns": 2
+  },
+  {
+    "domanda": "Chi ha scritto 'La Divina Commedia'?",
+    "risposta1": "Giovanni Boccaccio",
+    "risposta2": "Ludovico Ariosto",
+    "risposta3": "Dante Alighieri",
+    "risposta4": "Petrarca",
+    "trueAns": 3
+  },
+  {
+    "domanda": "Qual è il pianeta più vicino al Sole?",
+    "risposta1": "Venere",
+    "risposta2": "Terra",
+    "risposta3": "Marte",
+    "risposta4": "Mercurio",
+    "trueAns": 4
+  },
+  {
+    "domanda": "Qual è l'elemento chimico più abbondante nell'universo?",
+    "risposta1": "Ossigeno",
+    "risposta2": "Idrogeno",
+    "risposta3": "Carbonio",
+    "risposta4": "Elio",
+    "trueAns": 2
+  }
+
+  {
+    "domanda": "Quale animale è noto per il suo volo migratorio lungo migliaia di chilometri?",
+    "risposta1": "Rondine",
+    "risposta2": "Aquila",
+    "risposta3": "Farfalla Monarca",
+    "risposta4": "Colibrì",
+    "trueAns": 3
+  }
+
+  {
+    "domanda": "Chi ha scritto il libro 'Il Piccolo Principe'?",
+    "risposta1": "Antoine de Saint-Exupéry",
+    "risposta2": "Jules Verne",
+    "risposta3": "Albert Camus",
+    "risposta4": "F. Scott Fitzgerald",
+    "trueAns": 1
+  }
+
+  {
+    "domanda": "Qual è l'organo più grande del corpo umano?",
+    "risposta1": "Fegato",
+    "risposta2": "Cuore",
+    "risposta3": "Cervello",
+    "risposta4": "Pelle",
+    "trueAns": 4
+  }
+
+  {
+    "domanda": "Quale pianeta è conosciuto come 'la stella del mattino' o 'la stella della sera'?",
+    "risposta1": "Giove",
+    "risposta2": "Marte",
+    "risposta3": "Venere",
+    "risposta4": "Urano",
+    "trueAns": 3
+  }
+
+  {
+    "domanda": "Chi è stato il primo uomo a camminare sulla Luna?",
+    "risposta1": "Buzz Aldrin",
+    "risposta2": "Neil Armstrong",
+    "risposta3": "Yuri Gagarin",
+    "risposta4": "Michael Collins",
+    "trueAns": 2
+  }
+
+  {
+    "domanda": "Quale era il nome dell'astronave che ha portato i primi uomini sulla Luna?",
+    "risposta1": "Apollo 11",
+    "risposta2": "Space Shuttle",
+    "risposta3": "Soyuz",
+    "risposta4": "Vostok 1",
+    "trueAns": 1
+  }
+
+  {
+    "domanda": "Quale pianeta è conosciuto come il 'pianeta rosso'?",
+    "risposta1": "Marte",
+    "risposta2": "Giove",
+    "risposta3": "Venere",
+    "risposta4": "Mercurio",
+    "trueAns": 1
+  }
+
+  {
+    "domanda": "Chi ha scritto 'La Divina Commedia'?",
+    "risposta1": "Dante Alighieri",
+    "risposta2": "Petrarca",
+    "risposta3": "Boccaccio",
+    "risposta4": "Giovanni Verga",
+    "trueAns": 1
+  }
+
+  {
+    "domanda": "Qual è la capitale del Giappone?",
+    "risposta1": "Tokyo",
+    "risposta2": "Pechino",
+    "risposta3": "Seoul",
+    "risposta4": "Osaka",
+    "trueAns": 1
+  }
+
+  {
+    "domanda": "Qual è l'organo del corpo umano che pompa il sangue?",
+    "risposta1": "Fegato",
+    "risposta2": "Cervello",
+    "risposta3": "Cuore",
+    "risposta4": "Polmone",
+    "trueAns": 3
+  }
+
+  {
+    "domanda": "Quale è il più grande oceano del mondo?",
+    "risposta1": "Oceano Atlantico",
+    "risposta2": "Oceano Indiano",
+    "risposta3": "Oceano Pacifico",
+    "risposta4": "Oceano Artico",
+    "trueAns": 3
+  }
+
+  {
+    "domanda": "Chi ha dipinto 'La Notte Stellata'?",
+    "risposta1": "Pablo Picasso",
+    "risposta2": "Vincent van Gogh",
+    "risposta3": "Leonardo da Vinci",
+    "risposta4": "Claude Monet",
+    "trueAns": 2
+  }
+
+  {
+    "domanda": "Quale paese ha vinto il maggior numero di Coppe del Mondo FIFA?",
+    "risposta1": "Brasile",
+    "risposta2": "Germania",
+    "risposta3": "Argentina",
+    "risposta4": "Italia",
+    "trueAns": 1
+  }
+
+  {
+    "domanda": "In quale paese si trova la Grande Muraglia?",
+    "risposta1": "Giappone",
+    "risposta2": "Cina",
+    "risposta3": "India",
+    "risposta4": "Corea del Sud",
+    "trueAns": 2
   }
 ]

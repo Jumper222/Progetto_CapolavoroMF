@@ -5,14 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/brick_wall"
     tools:context=".Seconda_pagina">
 
     <TextView
         android:id="@+id/domanda"
         android:layout_width="328dp"
         android:layout_height="156dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="168dp"
         android:text="Domanda molto ineressante e ricercata"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
         android:textSize="100px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -68,14 +71,28 @@
         app:layout_constraintTop_toBottomOf="@+id/risposta2"
         app:layout_constraintVertical_bias="0.452" />
 
-    <TextView
-        android:id="@+id/prova_input"
+    <Button
+        android:id="@+id/indietro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginEnd="16dp"
+        android:text="Exit"
         app:layout_constraintBottom_toTopOf="@+id/domanda"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Score: 0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/domanda" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,12 +37,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.ButtonPlay.setOnClickListener {
             Log.d("MainActivity", "CLICCATO!")
-            binding.textView.text = "12344aZS1à+è3"
+            binding.textView.text = "Si parte!"
 
             callActivity()
 
         } //Crea l' evento OnClick sull' elemento ID: ButtonPlay, Stampa un log e cambia il text di textView
 
+        binding.buttonCloseApp.setOnClickListener{
+
+            finish() // Chiude l'activity corrente e ritorna all'activity precedente o chiude l'applicazione se non ci sono altre activity nello stack
+        }
 
 
 
@@ -57,12 +61,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun callActivity() {
-        val input = findViewById<EditText>(R.id.input)
-        val message = input.toString()
 
-        val intent = Intent(this, Seconda_pagina::class.java).also {
-            //andiamo a passare il messagio preso dall'input
-            it.putExtra("EXTRA_MESSAGE ",message)
+
+        val intent = Intent(this,Seconda_pagina::class.java).also {
+
             startActivity(it)
         }
     }

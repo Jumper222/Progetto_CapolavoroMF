@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#6200EE"/> <!-- Colore di sfondo del pulsante -->
+        <corners android:radius="12dp"/> <!-- Arrotonda gli angoli -->
+        <padding
+            android:left="16dp"
+            android:top="8dp"
+            android:right="16dp"
+            android:bottom="8dp"/>
+        <stroke
+            android:width="2dp"
+            android:color="#FFFFFF"/> <!-- Colore del bordo -->
+    </shape>
+</selector>

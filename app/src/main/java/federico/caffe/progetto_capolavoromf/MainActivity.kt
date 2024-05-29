@@ -43,9 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         } //Crea l' evento OnClick sull' elemento ID: ButtonPlay, Stampa un log e cambia il text di textView
 
-        binding.buttonCloseApp.setOnClickListener{
-
-            finish() // Chiude l'activity corrente e ritorna all'activity precedente o chiude l'applicazione se non ci sono altre activity nello stack
+        binding.buttonCloseApp.setOnClickListener {
+            finishAffinity() // Chiude l'activity corrente e tutte le altre activity appartenenti alla stessa task
         }
 
 

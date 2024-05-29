@@ -6,7 +6,7 @@ import androidx.room.Query
 
 @Dao
 interface DomandeDao {
-    @Query("SELECT * FROM domande")
+    @Query("SELECT * FROM Domande")
     fun getAll(): List<Domande>
 
     @Insert
